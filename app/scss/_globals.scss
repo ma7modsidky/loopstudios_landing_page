@@ -1,0 +1,103 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+
+    margin: auto;
+}
+
+h1, h2 , h3 {
+    padding: 0;
+    margin: 0;
+    font-family: $font-heading;
+}
+
+a, a:visited a:hover a:any-link{
+    text-decoration: none;
+    color: $White;
+}
+
+//flexbox
+.flex {
+    display: flex;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+//spacing
+.container {
+    max-width: 77.5rem;
+    margin: 0 auto;
+
+    //helper classes
+    &--pt {
+        padding-top: 4.375rem;
+    }
+    &--pr {
+        padding-right: 1.5rem;
+    }
+    &--pb {
+        padding-bottom: 4.375rem;
+    }
+    &--pl {
+        padding-left: 1.5rem;
+    }
+    &--py {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+    }
+    &--px {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    &--pall {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+.hide-for-mobile {
+    //hide for mobile and tablet
+    @include breakpoint-down(medium){
+        display: none;
+    }
+
+}
+
+
+
+.hide-for-desktop {
+    //hide for desktops
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
+
+//no scroll
+.no-scroll {
+    overflow: hidden;
+}
+
