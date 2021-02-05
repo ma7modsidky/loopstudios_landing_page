@@ -10,7 +10,7 @@
     }
 
     &__logo{
-        margin: auto;
+        margin: 2rem auto;
         @include breakpoint-up(large){
             grid-area: logo;
             margin-left: 0;
@@ -19,6 +19,7 @@
     } 
 
     &__links {
+        margin: 1rem auto;
         a{
             display: block;
             margin: 1.5rem auto;

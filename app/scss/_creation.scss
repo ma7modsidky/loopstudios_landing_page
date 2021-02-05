@@ -44,9 +44,6 @@
             
             height: 30rem;
             width: 15rem;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
             margin : 0;
             
         }
@@ -83,6 +80,9 @@
     }
         .box1{
             background-image: url('/images/mobile/image-deep-earth.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             
             @include breakpoint-up(large){
                 background-image: url('/images/desktop/image-deep-earth.jpg');
@@ -91,6 +91,9 @@
 
         .box2{
             background-image: url('/images/mobile/image-night-arcade.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             
             @include breakpoint-up(large){
                 background-image: url('/images/desktop/image-night-arcade.jpg');
@@ -98,6 +101,9 @@
         }
         .box3{
             background-image: url('/images/mobile/image-soccer-team.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             
             @include breakpoint-up(large){
                 background-image: url('/images/desktop/image-soccer-team.jpg');
@@ -105,6 +111,9 @@
         } 
         .box4{
             background-image: url('/images/mobile/image-grid.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             
             @include breakpoint-up(large){
                 background-image: url('/images/desktop/image-grid.jpg');
@@ -113,6 +122,9 @@
 
         .box5{
             background-image: url('/images/mobile/image-from-above.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             
             @include breakpoint-up(large){
                 background-image: url('/images/desktop/image-from-above.jpg');
@@ -121,6 +133,9 @@
         
         .box6{
             background-image: url('/images/mobile/image-pocket-borealis.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             
             @include breakpoint-up(large){
                 background-image: url('/images/desktop/image-pocket-borealis.jpg');
@@ -129,6 +144,9 @@
     
         .box7{
             background-image: url('/images/mobile/image-curiosity.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             
             @include breakpoint-up(large){
                 background-image: url('/images/desktop/image-curiosity.jpg');
@@ -137,6 +155,9 @@
         
         .box8{
             background-image: url('/images/mobile/image-fisheye.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             
             @include breakpoint-up(large){
                 background-image: url('/images/desktop/image-fisheye.jpg');
@@ -148,7 +169,7 @@
         border: 1px solid $Black;
         text-align: center;
         padding: 0.8rem 2rem;
-        margin: auto;
+        margin: 5rem auto;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 1.1rem;

@@ -489,9 +489,6 @@ a, a:visited a:hover a:any-link {
   .creation__box {
     height: 30rem;
     width: 15rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
   }
 }
@@ -523,6 +520,9 @@ a, a:visited a:hover a:any-link {
 
 .creation .box1 {
   background-image: url("/images/mobile/image-deep-earth.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 64em) {
@@ -533,6 +533,9 @@ a, a:visited a:hover a:any-link {
 
 .creation .box2 {
   background-image: url("/images/mobile/image-night-arcade.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 64em) {
@@ -543,6 +546,9 @@ a, a:visited a:hover a:any-link {
 
 .creation .box3 {
   background-image: url("/images/mobile/image-soccer-team.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 64em) {
@@ -553,6 +559,9 @@ a, a:visited a:hover a:any-link {
 
 .creation .box4 {
   background-image: url("/images/mobile/image-grid.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 64em) {
@@ -563,6 +572,9 @@ a, a:visited a:hover a:any-link {
 
 .creation .box5 {
   background-image: url("/images/mobile/image-from-above.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 64em) {
@@ -573,6 +585,9 @@ a, a:visited a:hover a:any-link {
 
 .creation .box6 {
   background-image: url("/images/mobile/image-pocket-borealis.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 64em) {
@@ -583,6 +598,9 @@ a, a:visited a:hover a:any-link {
 
 .creation .box7 {
   background-image: url("/images/mobile/image-curiosity.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 64em) {
@@ -593,6 +611,9 @@ a, a:visited a:hover a:any-link {
 
 .creation .box8 {
   background-image: url("/images/mobile/image-fisheye.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 64em) {
@@ -606,7 +627,7 @@ a, a:visited a:hover a:any-link {
   border: 1px solid black;
   text-align: center;
   padding: 0.8rem 2rem;
-  margin: auto;
+  margin: 5rem auto;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.1rem;
@@ -645,7 +666,7 @@ a, a:visited a:hover a:any-link {
 }
 
 .footer__logo {
-  margin: auto;
+  margin: 2rem auto;
 }
 
 @media (min-width: 64em) {
@@ -653,6 +674,10 @@ a, a:visited a:hover a:any-link {
     grid-area: logo;
     margin-left: 0;
   }
+}
+
+.footer__links {
+  margin: 1rem auto;
 }
 
 .footer__links a {
