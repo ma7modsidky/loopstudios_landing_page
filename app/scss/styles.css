@@ -676,10 +676,6 @@ a, a:visited a:hover a:any-link {
   }
 }
 
-.footer__links {
-  margin: 1rem auto;
-}
-
 .footer__links a {
   display: block;
   margin: 1.5rem auto;
