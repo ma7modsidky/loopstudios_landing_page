@@ -1,4 +1,9 @@
 .creation {
+    margin-top: 2rem;
+    @include breakpoint-up(large){
+       position: relative;
+    }
+
     &__title {
         text-align: center;
         font-weight: 50;
@@ -9,28 +14,59 @@
         letter-spacing: 4px;
         opacity: 0.8;
         padding-top: 4rem;
-        padding-bottom: 1rem;
+        padding-bottom: 4rem;
+
+        @include breakpoint-up(large){
+            text-align: left;
+        }
     }
 
     &__content {
-        padding: 1rem 0;
+        margin-bottom: 2rem;
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2rem;
+        }
         
     }
     &__box {
         margin: 2rem 0;
         position: relative;
         height: 10rem;
+        transition: all 300 ease-in-out;
+        border: 1px solid $VeryDarkGray;
+        
+        cursor: pointer;
 
-        img {
-            width: 100%;
-            height: 10rem;
-            object-fit: cover; 
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            border: 1px solid $DarkGray;
+        @include breakpoint-up(large){
+            
+            height: 30rem;
+            width: 15rem;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin : 0;
+            
         }
+        &:hover{
+            &::before {
+                
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.605);
+            }
+
+            h1{
+                color: $Black;
+            }
+        }
+
 
         h1 {
             position: absolute;
@@ -38,11 +74,74 @@
             bottom: 2rem;
             left: 2rem;
             text-align: left;
-            width: 40%;
+            width: 70%;
             font-weight: lighter;
-            opacity: 0.9;
+            opacity: 1;
+
         }
+
     }
+        .box1{
+            background-image: url('/images/mobile/image-deep-earth.jpg');
+            
+            @include breakpoint-up(large){
+                background-image: url('/images/desktop/image-deep-earth.jpg');
+            }
+        }    
+
+        .box2{
+            background-image: url('/images/mobile/image-night-arcade.jpg');
+            
+            @include breakpoint-up(large){
+                background-image: url('/images/desktop/image-night-arcade.jpg');
+            }
+        }
+        .box3{
+            background-image: url('/images/mobile/image-soccer-team.jpg');
+            
+            @include breakpoint-up(large){
+                background-image: url('/images/desktop/image-soccer-team.jpg');
+            }       
+        } 
+        .box4{
+            background-image: url('/images/mobile/image-grid.jpg');
+            
+            @include breakpoint-up(large){
+                background-image: url('/images/desktop/image-grid.jpg');
+            }          
+        }
+
+        .box5{
+            background-image: url('/images/mobile/image-from-above.jpg');
+            
+            @include breakpoint-up(large){
+                background-image: url('/images/desktop/image-from-above.jpg');
+            }          
+        }
+        
+        .box6{
+            background-image: url('/images/mobile/image-pocket-borealis.jpg');
+            
+            @include breakpoint-up(large){
+                background-image: url('/images/desktop/image-pocket-borealis.jpg');
+            }          
+        }        
+    
+        .box7{
+            background-image: url('/images/mobile/image-curiosity.jpg');
+            
+            @include breakpoint-up(large){
+                background-image: url('/images/desktop/image-curiosity.jpg');
+            }          
+        }
+        
+        .box8{
+            background-image: url('/images/mobile/image-fisheye.jpg');
+            
+            @include breakpoint-up(large){
+                background-image: url('/images/desktop/image-fisheye.jpg');
+            }          
+        }             
 
     &__see_all {
         width: 60%;
@@ -52,7 +151,22 @@
         margin: auto;
         text-transform: uppercase;
         letter-spacing: 2px;
+        font-size: 1.1rem;
         cursor: pointer;
+        @include breakpoint-up(large){
+            margin: 0 auto;
+            width: 10rem;
+            position: absolute;
+            top: 4.4rem;
+            right: 2.466rem;
+            transition: all 300ms ease-in-out;
+
+            &:hover{
+                background-color: $Black;
+                color: $White;
+            }
+        }    
     }
+
     
 }
