@@ -1,0 +1,58 @@
+.creation {
+    &__title {
+        text-align: center;
+        font-weight: 50;
+        font-size: 1.8rem;
+        color: $Black;
+        text-transform: uppercase;
+        line-height: 2rem;
+        letter-spacing: 4px;
+        opacity: 0.8;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    &__content {
+        padding: 1rem 0;
+        
+    }
+    &__box {
+        margin: 2rem 0;
+        position: relative;
+        height: 10rem;
+
+        img {
+            width: 100%;
+            height: 10rem;
+            object-fit: cover; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            border: 1px solid $DarkGray;
+        }
+
+        h1 {
+            position: absolute;
+            color: $White;
+            bottom: 2rem;
+            left: 2rem;
+            text-align: left;
+            width: 40%;
+            font-weight: lighter;
+            opacity: 0.9;
+        }
+    }
+
+    &__see_all {
+        width: 60%;
+        border: 1px solid $Black;
+        text-align: center;
+        padding: 0.8rem 2rem;
+        margin: auto;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+    
+}

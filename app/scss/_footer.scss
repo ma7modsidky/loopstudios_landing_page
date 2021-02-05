@@ -1,0 +1,27 @@
+.footer {
+    background-color: $Black;
+    text-align: center;
+    padding: 3rem;
+
+    &__logo{
+        margin: auto;
+    } 
+
+    &__links a{
+        display: block;
+        margin: 1.5rem auto;
+    }
+
+    &__social {
+        margin : 2rem;
+
+        a {
+            margin:0.5rem;
+        }
+
+    }
+
+    &__copyright {
+        color: $White;
+    }
+}

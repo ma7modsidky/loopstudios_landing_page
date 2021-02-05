@@ -1,0 +1,26 @@
+.hero {
+    text-align: center;
+    padding-top: 3rem;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__title {
+        font-weight: 50;
+        font-size: 2rem;
+        color: $Black;
+        text-transform: uppercase;
+        line-height: 2rem;
+        letter-spacing: 4px;
+        opacity: 0.8;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    &__text {
+        color: $DarkGray;
+        font-family: $font-normal;
+        font-size: 1.333rem;
+    }
+}
